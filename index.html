@@ -7,11 +7,13 @@
 
     <style>
     model-viewer {
-    width: 30vw;
-    height: 30vw;
-    background-color: grey;
-    display:flex;
+        width: 30vw;
+        height: 30vw;
+        background-color: grey;
+        display:flex;
     }
+    QR{
+         display:flex;    }
     </style>
     
 </head>
@@ -25,7 +27,9 @@
                   auto-rotate
                   camera-controls>
     </model-viewer>
-    <img src="./QR.png">
+    <div class ="QR">
+        <img src="./QR.png">
+    </div>
     <br>
 </body>
 </html>
