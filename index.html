@@ -10,10 +10,10 @@
         width: 30vw;
         height: 30vw;
         background-color: grey;
-        display:flex;
+        
     }
-    .QR{
-         display:flex;    
+    .main{
+         display:flex;
     }
     </style>
     
@@ -21,16 +21,17 @@
 <body>
     <h2>これはデモです。実物とは関係ありません</h2>
     <hr>
-    
-    <model-viewer ar
+    <div class main>
+        <model-viewer ar
                   ar-modes="scene-viewer webxr quick-look"
                   src="./demo.glb"
                   auto-rotate
                   camera-controls>
-    </model-viewer>
-    <div class ="QR">
-        <img src="./QR.png">
-        <h3>AR表示はこちらのQRコードを読み込んでください</h3>
+        </model-viewer>
+        <div class ="QR">
+            <img src="./QR.png">
+            <h3>AR表示はこちらのQRコードを読み込んでください</h3>
+        </div>
     </div>
     <br>
 </body>
